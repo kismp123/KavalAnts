@@ -1,7 +1,7 @@
 import os
 from subprocess import call
 
-idaPro = 'C:\\Program Files\\IDA 6.8\\idaq.exe'
+idaPro = 'C:\\Program Files\\IDA 6.8\\idaw.exe'
 codeCov = 'c:\\Work\\FF\\GenCoverageInfo.py' 
 binDir = "C:\\Work\\FF\\bin\\"
 
