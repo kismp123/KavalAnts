@@ -4,7 +4,7 @@ import os
 
 autoWait()
 
-baseDir = ".\"
+baseDir = ".\\"
 
 if not os.path.exists(baseDir + "KavalAntsBB"):
     os.makedirs(baseDir + "KavalAntsBB")
