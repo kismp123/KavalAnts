@@ -4,7 +4,7 @@ import getopt
 import sys
 
 
-baseExecDir = ".\\"
+baseExecDir = "pathToExe\\notepad.exe"
 baseBbDir = ".\\KavalAntsBB"
 	
 
@@ -48,9 +48,10 @@ for bbFile in os.listdir(baseBbDir):
 print "Finding files to modify"
 for root, subFolder, files in os.walk(baseExecDir):
 	for item in files:
+		item = item.lower()    
 		if item in bbFiles:
 			bbFiles[item].append(str(os.path.join(baseExecDir, root, item)))
-			
+
 #Any file not found
 for fname in bbFiles:
 	if len(bbFiles[fname]) == 0:
