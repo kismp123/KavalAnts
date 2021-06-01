@@ -10,4 +10,4 @@ for root, subFolder, files in os.walk(inputDir):
 	for item in files:
 		fname = os.path.join(inputDir, root, item)     
         print "Coverage... '%s'" % fname
-        call([python, codeCov, exePath, fname])
+        call([python, codeCov, '-f ' + fname.split('.')[0]+'_result.txt', exePath, fname])
