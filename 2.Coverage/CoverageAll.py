@@ -8,7 +8,7 @@ exePath = "pathToExe\\notepad.exe"
 
 for root, subFolder, files in os.walk(inputDir):
 	for item in files:
-		fname = os.path.join(inputDir, root, item)
-        if( fname.endswith('.pdf') or True ):
-			print "Coverage... '%s'" % fname
+		fname = os.path.join(inputDir, root, item)     
+        if( fname.endswith('pdf')):
+			printg "Coverage... '%s'" % fname
 			call([python, codeCov, exePath, fname])
