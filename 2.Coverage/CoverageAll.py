@@ -10,5 +10,5 @@ for root, subFolder, files in os.walk(inputDir):
 	for item in files:
 		fname = os.path.join(inputDir, root, item)     
         if( fname.endswith('pdf')):
-			printg "Coverage... '%s'" % fname
+			print "Coverage... '%s'" % fname
 			call([python, codeCov, exePath, fname])
